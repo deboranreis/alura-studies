@@ -27,6 +27,7 @@ function Formulario({ setTarefas }: Props) {
         );
         setTarefa("");
         setTempo("00:00");
+
     }
     return(
         <form className={style.novaTarefa} onSubmit={adicionarTarefa}>
@@ -56,7 +57,6 @@ function Formulario({ setTarefas }: Props) {
                        onChange={evento => setTempo(evento.target.value)}
                        id="tempo"
                        min="00:00:00"
-                       max="01:30:00"
                        required
                     />
                 </div>
